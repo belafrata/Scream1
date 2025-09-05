@@ -1,0 +1,308 @@
+:root {
+    --red1: #9F0000;
+    --red2: #590000;
+    --gray1: #4d4d4d;
+    --gray2: #acacac;
+    --white1: #f6f6f6;
+    --black1: hsla(0, 0%, 0%, 0.986);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white1);
+}
+
+header {
+    background-color: var(--red1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    width: 150px;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.busca {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: var(--white1);
+}
+
+.busca input {
+    font-size: 18px;
+    color: black;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 500px;
+}
+
+.busca i {
+    color: var(--gray1);
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu ul li a:hover {
+    color: var(--red2);
+}
+
+.menu i {
+    font-size: 30px;
+}
+
+#fundo {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.enredo h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.enredo p {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.enredo {
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+}
+
+.enredo img {
+    height: 500px;
+    margin-left: 200px;
+    margin-top: 3vh;
+}
+
+.sinopse {
+    text-align: justify;
+    max-width: 1000px;
+    margin-left: 50px;
+}
+
+.infos {
+    position: relative;
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.textos {
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.textos p {
+    font-size: 22px;
+}
+
+.textos h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.dupla {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personagens {
+    display: flex;
+    margin-top: 50px;
+    width: 800px;
+}
+
+.personagens img {
+    height: 250px;
+    width: 180px;
+}
+
+.personagens p {
+    width: 330px;
+}
+
+.sobre {
+    margin: 2%;
+}
+
+.sobre p {
+    margin-bottom: 50px;
+}
+
+/*CARROSSEL DE CURIOSIDADES*/
+
+.carrossel {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.slider {
+    position: relative;
+    width: 700px;
+    background: var(--red1);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.445);
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.6s;
+}
+
+.slide {
+    width: 100%;
+    min-height: 150px;
+    padding: 28px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.slider input {
+    display: none;
+}
+
+#radio1:checked ~ .slides {
+    transform: translateX(0%); 
+}
+
+#radio2:checked ~ .slides {
+    transform: translateX(-33.5%); 
+}
+
+#radio3:checked ~ .slides { 
+    transform: translateX(-67%); 
+}
+
+.manual-navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    display: flex;
+    gap: 10px;
+    z-index: 5;
+}
+
+.manual-btn {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid rgba(245,245,245,0.9);
+    display: inline-block;
+    cursor: pointer;
+    transition: transform .18s, background .18s, border-color .18s;
+    background: transparent;
+}
+
+.manual-btn:hover { 
+    transform: scale(1.15); background: rgba(245,245,245,0.85); 
+}
+
+footer {
+    background-color: var(--red1);
+    display: flex;
+    color: var(--branco);
+    height: 25vh;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer h6 {
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+footer .lista-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .lista-footer h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+footer .lista-footer ul {
+    list-style: none;
+}
+
+footer .lista-footer ul li a {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 17px;
+}
+
+footer .lista-footer ul li a:hover {
+    text-decoration: underline;
+    color: var(--rosa1);
+}
+
+footer .redesSociais {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+footer .redesSociais div i {
+    font-size: 7vh;
+    transition: all .5s;
+}
