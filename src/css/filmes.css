@@ -99,11 +99,14 @@ header {
     margin-top: 20px;
     margin-bottom: 15px;
     text-transform: uppercase;
+    padding-left: 40px;
 }
 
 .enredo p {
     font-size: 23px;
     font-weight: 500;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .enredo {
@@ -116,6 +119,11 @@ header {
     height: 500px;
     margin-left: 200px;
     margin-top: 3vh;
+}
+
+.sinopse {
+    background-color: rgba(255, 255, 255, 0.418);
+    border-radius: 20px;
 }
 
 .sinopse {
