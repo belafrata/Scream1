@@ -16,15 +16,25 @@
         </div>
         <div class="busca">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search" placeholder="Pesquisar...">
+            <input type="search" id="pesquisa" placeholder="Pesquisar...">
         </div>
         <nav class="menu">
             <ul>
                 <li><a href="index.html">FILMES</a></li>
                 <li><a href="index.html">QUIZ</a></li>
-                <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                <li><a href="" id="menuBtn"><i class="fa-solid fa-bars"></i></a></li>
             </ul>
         </nav>
+
+        <div id="sidebar" class="sidebar">
+            <div class="close-btn" id="closeBtn">&times;</div>
+            <h2>Gênero Terror</h2>
+            <p>O gênero terror é um dos mais antigos e fascinantes da literatura e do cinema, voltado a despertar medo, tensão e emoções intensas no público. Ele se caracteriza por explorar o desconhecido, o sobrenatural e os instintos mais primitivos do ser humano, criando atmosferas de suspense e apreensão. Os elementos clássicos do terror incluem criaturas monstruosas, forças sobrenaturais, assassinatos, lendas urbanas e cenários sombrios que intensificam a sensação de perigo iminente.
+            Além do susto imediato, o terror muitas vezes trabalha com o medo psicológico, mexendo com a mente do espectador e provocando reflexão sobre temas como a morte, o desconhecido e a fragilidade humana. No cinema, diretores como Alfred Hitchcock, Wes Craven e James Wan ajudaram a consolidar o gênero, enquanto na literatura autores como Edgar Allan Poe, H.P. Lovecraft e Stephen King exploraram o horror psicológico e sobrenatural de maneira magistral.</p>
+        </div>
+
+        <div id="overlay" class="overlay"></div>
+
     </header>
     <!--IMAGEM DE FUNDO, COLOCA A QUE A ISA MANDOU-->
     <img src="./src/assets/img/sangueFundo.png" id="fundo">
@@ -46,7 +56,6 @@
                 em cena, impedindo sus ações. Sidney mata Stu derrubando uma televisão em sua cabeça e, após uma
                 tentativa final, Billy é morto. O filme termina com Neil salvo, Dewey ferido e Gale reportando os
                 acontecimentos.</p>
-            </p>
         </div>
         <!--CAPA DO FILME-->
         <img src="src/assets/img/standFilme1.jpg">
@@ -56,10 +65,11 @@
     <section class="infos">
         <div class="textos">
             <h2>Produção e Direção</h2>
-            <p>O filme foi dirigido por Wes Craven. Nascido em Cleveland, Ohio, no dia 2 de agosto de 1939, sendo um
-                realizador, produtor,
-                argumentista e editor de cinema. Foi o diretor dos filmes do pânico 1 ao 4, encerrando sua
-                jornada por conta de sua morte em 2015 por conta de um tumor cerebral.</p>
+            <p>Foi dirigido por Wes Craven, um dos maiores nomes do terror, conhecido
+                principalmente por criar a franquia A Nightmare on Elm Street e o icônico vilão Freddy Krueger.A
+                produção ficou a cargo de Cathy Konrad e Marianne Maddalena, esta última colaboradora frequente de
+                Craven, além da Miramax/Dimension Films, que acreditou no potencial da história para revitalizar o
+                terror nos anos 1990.</p>
         </div>
         <div class="textos">
             <h2>Lançamento</h2>
@@ -171,20 +181,23 @@
 
     <div class="carrossel">
         <div class="slider">
-        <!-- radios devem ficar antes das slides para o CSS funcionar -->
+            <!-- radios devem ficar antes das slides para o CSS funcionar -->
             <input type="radio" name="radio-btn" id="radio1" checked>
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
 
             <div class="slides">
                 <div class="slide">
-                    <p>🎭 Máscara de voz realista: foi o primeiro filme da franquia a introduzir o dispositivo que permitia a Ghostface imitar a voz de qualquer personagem.</p>
+                    <p>🎭 Máscara de voz realista: foi o primeiro filme da franquia a introduzir o dispositivo que
+                        permitia a Ghostface imitar a voz de qualquer personagem.</p>
                 </div>
                 <div class="slide">
-                    <p>📜 Roteiro em constante mudança: o elenco recebia versões diferentes do roteiro, sem saber ao certo quem era o assassino.</p>
+                    <p>📜 Roteiro em constante mudança: o elenco recebia versões diferentes do roteiro, sem saber ao
+                        certo quem era o assassino.</p>
                 </div>
                 <div class="slide">
-                    <p>🎬 Quase sem Sidney: Neve Campbell só conseguiu gravar por 20 dias, então a trama precisou ser adaptada à sua ausência.</p>
+                    <p>🎬 Quase sem Sidney: Neve Campbell só conseguiu gravar por 20 dias, então a trama precisou ser
+                        adaptada à sua ausência.</p>
                 </div>
             </div>
 
@@ -196,6 +209,7 @@
         </div>
     </div>
 
+    <div class="toast-container" id="toastContainer"></div>
 
     <footer>
         <div>
@@ -229,7 +243,7 @@
             </div>
         </div>
     </footer>
-    <script src="./src/js/script.js"></script>
+    <script src="./src/js/filmes.js"></script>
 </body>
 
 </html>

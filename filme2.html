@@ -16,37 +16,49 @@
         </div>
         <div class="busca">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search" placeholder="Pesquisar...">
+            <input type="search" id="pesquisa" placeholder="Pesquisar...">
         </div>
         <nav class="menu">
             <ul>
                 <li><a href="index.html">FILMES</a></li>
                 <li><a href="index.html">QUIZ</a></li>
-                <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                <li><a href="" id="menuBtn"><i class="fa-solid fa-bars"></i></a></li>
             </ul>
         </nav>
+
+        <div id="sidebar" class="sidebar">
+            <div class="close-btn" id="closeBtn">&times;</div>
+            <h2>Gênero Terror</h2>
+            <p>O gênero terror é um dos mais antigos e fascinantes da literatura e do cinema, voltado a despertar medo, tensão e emoções intensas no público. Ele se caracteriza por explorar o desconhecido, o sobrenatural e os instintos mais primitivos do ser humano, criando atmosferas de suspense e apreensão. Os elementos clássicos do terror incluem criaturas monstruosas, forças sobrenaturais, assassinatos, lendas urbanas e cenários sombrios que intensificam a sensação de perigo iminente.
+            Além do susto imediato, o terror muitas vezes trabalha com o medo psicológico, mexendo com a mente do espectador e provocando reflexão sobre temas como a morte, o desconhecido e a fragilidade humana. No cinema, diretores como Alfred Hitchcock, Wes Craven e James Wan ajudaram a consolidar o gênero, enquanto na literatura autores como Edgar Allan Poe, H.P. Lovecraft e Stephen King exploraram o horror psicológico e sobrenatural de maneira magistral.</p>
+        </div>
+
+        <div id="overlay" class="overlay"></div>
+
     </header>
     <!--IMAGEM DE FUNDO, COLOCA A QUE A ISA MANDOU-->
     <img src="./src/assets/img/sangueFundo.png" id="fundo">
     <section class="enredo">
         <div class="sinopse">
             <h1>Pânico 2 (1997)</h1>
-            <p>O filme se passa na cidade de Woodsbro, Califórnia, onde a estudante Casey Becker é assassinada
-                brutalmente por Ghostface que sequestrou seu namorado, após um jogo macabro por telefone.</p>
-            <p>O crime choca a cidade e reúne diversos repórteres no local, sendo um deles Gale, uma repórter
-                investigativa, que ainda analisava o caso do assassinato de Maureen Prescott, mãe de Sidney, ocorrido um
-                ano antes. Sidney, traumatizada e desconfiada, sofre outro ataque do assassino enquanto seu namorado
-                Billy Loomis se torna suspeito.</p>
-            <p>Com a escola fechada após novas mortes, Tatum organiza uma festa em um local isolado. Na festa,
-                descobrem o assassinato do diretor. Com diversos estudantes correndo em direção a sua sala para ver o
-                corpo.</p>
-            <p>Enquanto isso, mais assassinatos ocorrem, incluindo o de Tatum. No clímax, revela-se que Billy e Stu são
-                os assassinos, responsáveis também pela morte de Maureen. Foi revelado que o caso entre ela e o pai de
-                Billy fez sua mãe o abandonar. Eles planejam incriminar o pai de Sidney, mas o plano falha: Gale entra
-                em cena, impedindo sus ações. Sidney mata Stu derrubando uma televisão em sua cabeça e, após uma
-                tentativa final, Billy é morto. O filme termina com Neil salvo, Dewey ferido e Gale reportando os
-                acontecimentos.</p>
+            <p>Dois anos depois dos assassinatos em Woodsboro, Sidney Prescott está tentando recomeçar sua vida na
+                faculdade, estudando teatro e morando com sua amiga Hallie. </p>
+            <p>Mas a paz dura pouco. Durante a estreia do filme FACADA, baseado nos crimes que ela viveu — dois
+                estudantes são assassinados, marcando o retorno do assassino mascarado Ghostface.
+                Logo, uma nova onda de crimes começa, e Sidney percebe que está sendo novamente perseguida, com a ajuda
+                da repórter Gale Weathers, do policial Dewey Riley e do amigo Randy, ela tenta descobrir quem está por
+                trás dos assassinatos.
+                Infelizmente, Randy acaba sendo morto, o que aumenta ainda mais a tensão.
             </p>
+            <p>A trama se intensifica até que Sidney é levada ao teatro da faculdade, onde tudo chega ao clímax.
+                Lá, ela descobre que o assassino é Mickey, um colega de faculdade obcecado por filmes de terror.
+                Ele revela que quer usar os assassinatos como forma de ganhar fama, colocando a culpa nos filmes
+                violentos durante o julgamento.</p>
+            <p>Ele também não está sozinho: a segunda assassina é Debbie Salt, que na verdade é a mãe de Billy Loomis (o
+                assassino do primeiro filme), Ela quer vingança pela morte do filho.</p>
+            <p>No final, após uma luta intensa, Sidney consegue sobreviver mais uma vez.
+                Ela mata Mickey com a ajuda de Gale, e depois enfrenta a Sra. Loomis, que também é derrotada. O filme
+                termina com Sidney, mais uma vez, tentando seguir em frente, apesar dos traumas que viveu.</p>
         </div>
         <!--CAPA DO FILME-->
         <img src="src/assets/img/standFilme2.png">
@@ -58,17 +70,22 @@
 
             <h2>Produção e Direção</h2>
 
-            <p>O filme foi dirigido por Wes Craven. Nascido em Cleveland, Ohio, no dia 2 de agosto de 1939, sendo um
-                realizador, produtor,
-                argumentista e editor de cinema. Foi o diretor dos filmes do pânico 1 ao 4, encerrando sua
-                jornada por conta de sua morte em 2015 por conta de um tumor cerebral.</p>
+            <p>Também dirigido por Wes Craven, que retornou para consolidar o sucesso do primeiro filme e dar
+                continuidade à sua proposta de revitalizar o terror com humor ácido e metalinguagem. A produção ficou
+                novamente sob responsabilidade de Cathy Konrad e Marianne Maddalena, em parceria com a Dimension Films,
+                que apostava na rápida sequência para aproveitar o enorme impacto cultural do original.</p>
 
         </div>
 
         <div class="textos">
             <h2>Lançamento</h2>
-            <p>As filmagens de Pânico 2 começaram em 16 de Junho de 1997 e terminaram em 28 de Agosto de 1997, num total de nove semanas e com um orçamento de 24 milhões de dólares. Geórgia, Atlanta e Los Angeles serviram de locação para representar o estado de Ohio, onde está situado o ficcional Windsor College.</p>
-            <p>Pânico 2 foi um sucesso nos Estados Unidos, tendo sido o filme mais assistido do dia 12 de dezembro, com 14.380.000 dólares arrecadados em 3.112 cinemas. Continuou em primeiro lugar no dia seguinte, arrecadando 14.200.000 dólares. O filme permaneceu na liderança sendo o filme de maior arrecadação nos cinemas norte-americanos no final de semana com 32.926.342 dólares na bilheteira</p>
+            <p>As filmagens de Pânico 2 começaram em 16 de Junho de 1997 e terminaram em 28 de Agosto de 1997, num total
+                de nove semanas e com um orçamento de 24 milhões de dólares. Geórgia, Atlanta e Los Angeles serviram de
+                locação para representar o estado de Ohio, onde está situado o ficcional Windsor College.</p>
+            <p>Pânico 2 foi um sucesso nos Estados Unidos, tendo sido o filme mais assistido do dia 12 de dezembro, com
+                14.380.000 dólares arrecadados em 3.112 cinemas. Continuou em primeiro lugar no dia seguinte,
+                arrecadando 14.200.000 dólares. O filme permaneceu na liderança sendo o filme de maior arrecadação nos
+                cinemas norte-americanos no final de semana com 32.926.342 dólares na bilheteira</p>
         </div>
     </section>
 
@@ -81,7 +98,7 @@
                 <div class="sobre">
                     <h2>Neve Campbell</h2>
                     <p>como Sidney Prescot</p>
-                    <p>A protagonista do filme.</p>
+                    <p>A protagonista e sobrevivente dos acontecimentos do filme anterior.</p>
                 </div>
             </div>
 
@@ -98,11 +115,11 @@
         <div class="dupla">
             <div class="personagens">
                 <!--PROCURAR UMA IMAGEM PARA CADA ATOR/PERSONAGEM-->
-                <img src="./src/assets/img/perso3.jpg">
+                <img src="./src/assets/img/perso9.jpg">
                 <div class="sobre">
-                    <h2>Rose McGowan</h2>
-                    <p>como Tatum Riley</p>
-                    <p>Amiga da protagonista.</p>
+                    <h2>Jerry O’Connel</h2>
+                    <p>como Derek Feldman</p>
+                    <p>Namorado de Sidney Prescott.</p>
                 </div>
             </div>
 
@@ -112,7 +129,8 @@
                 <div class="sobre">
                     <h2>David Arquette</h2>
                     <p>como Dewey Riley</p>
-                    <p>Xerife de Woodsboro</p>
+                    <p>Xerife de Woodsboro, uma figura de irmão para Sidney e tem seus próprios dilemas românticos com
+                        Gale Weathers</p>
                 </div>
             </div>
         </div>
@@ -123,49 +141,68 @@
                 <div class="sobre">
                     <h2>Jamie Kennedy</h2>
                     <p>como Randy</p>
-                    <p>Faz parte do grupo de amigos, é apaixonado por filmes de terror e sabe de todas as suas regras e
+                    <p>Sobrevivente do ultimo filme, conhece muitos filmes de terror e sabe de todas as suas regras e
                         convenções.</p>
                 </div>
             </div>
 
             <div class="personagens">
                 <!--PROCURAR UMA IMAGEM PARA CADA ATOR/PERSONAGEM-->
-                <img src="./src/assets/img/perso6.jpg">
+                <img src="./src/assets/img/perso10.jpg">
                 <div class="sobre">
-                    <h2>Skeet Ulrich</h2>
-                    <p>como Billy Loomis</p>
-                    <p>Namorado de Sidney e o primeiro ghostface.</p>
+                    <h2>Liev Schreiber</h2>
+                    <p>como Cotton Weary</p>
+                    <p>Um condenado à morte exonerado e em busca da fama.</p>
                 </div>
             </div>
         </div>
-        <div class="personagens">
-            <!--PROCURAR UMA IMAGEM PARA CADA ATOR/PERSONAGEM-->
-            <img src="./src/assets/img/perso7.jpg">
-            <div class="sobre">
-                <h2>Matthew Lillard</h2>
-                <p>como Stu Matcher</p>
-                <p>Amigo de Billy e grande fã de filmes de terror, e também o segundo ghostface.</p>
+        <div class="dupla">
+            <div class="personagens">
+                <!--PROCURAR UMA IMAGEM PARA CADA ATOR/PERSONAGEM-->
+                <img src="./src/assets/img/perso11.jpg">
+                <div class="sobre">
+                    <h2>Timothy Oliphant</h2>
+                    <p>como Mickey Altieri</p>
+                    <p>Um dos ghostfaces, ele é na verdade um psicopata que se uniu à Sra. Loomis para começar uma nova
+                        onda de assassinatos. Mickey espera que os assassinatos o tornem famoso no mundo todo.
+                    </p>
+                </div>
+            </div>
+            <div class="personagens">
+                <!--PROCURAR UMA IMAGEM PARA CADA ATOR/PERSONAGEM-->
+                <img src="./src/assets/img/perso12.jpg">
+                <div class="sobre">
+                    <h2>Laurie Metcalf</h2>
+                    <p>como Nancy Loomis</p>
+                    <p>sob o pseudônimo de "Debbie Salt" ela é a Mãe do psicopata "Billy Lommis" o ghostface do filme
+                        anterior.</p>
+                </div>
             </div>
         </div>
 
     </section>
 
-     <div class="carrossel">
+    <div class="carrossel">
         <div class="slider">
-        <!-- radios devem ficar antes das slides para o CSS funcionar -->
+            <!-- radios devem ficar antes das slides para o CSS funcionar -->
             <input type="radio" name="radio-btn" id="radio1" checked>
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
 
             <div class="slides">
                 <div class="slide">
-                    <p>🎭 Curiosidade 1.</p>
+                    <p>🎭 A morte de Maureen (Jada Pinkett) em um cinema lotado, durante a exibição do fictício Stab,
+                        foi pensada por Wes Craven para ser um comentário sobre o impacto da violência no
+                        entretenimento, misturando realidade e ficção.</p>
                 </div>
                 <div class="slide">
-                    <p>📜 Curiosidade 2.</p>
+                    <p>📜 Durante a produção, partes do roteiro caíram na internet, revelando quem seriam os assassinos.
+                        Isso obrigou Williamson a reescrever boa parte da história para surpreender o público.</p>
                 </div>
                 <div class="slide">
-                    <p>🎬 Curiosidade 3.</p>
+                    <p>🎬 O filme foi produzido e lançado em tempo recorde: menos de um ano após o sucesso do primeiro
+                        Pânico. Wes Craven e Kevin Williamson tiveram pouco tempo para desenvolver a sequência, mas
+                        conseguiram manter o impacto.</p>
                 </div>
             </div>
 
@@ -177,7 +214,8 @@
         </div>
     </div>
 
-    
+    <div class="toast-container" id="toastContainer"></div>
+
     <footer>
         <div>
             <img src="./src/assets/img/logoscream.png">
@@ -210,7 +248,7 @@
             </div>
         </div>
     </footer>
-    <script src="./src/js/script.js"></script>
+    <script src="./src/js/filmes.js"></script>
 </body>
 
 </html>
