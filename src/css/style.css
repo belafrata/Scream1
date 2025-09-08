@@ -351,3 +351,8 @@ footer .redesSociais div i {
     font-size: 7vh;
     transition: all .5s;
 }
+
+footer .redesSociais a i {
+    color: #000;
+    transition: color 0.3s;
+}

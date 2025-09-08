@@ -373,6 +373,11 @@ footer .redesSociais div i {
     transition: all .5s;
 }
 
+footer .redesSociais a i {
+    color: #000;
+    transition: color 0.3s;
+}
+
 .toast-container {
   position: fixed;
   bottom: 20px;

@@ -8,7 +8,7 @@ arrow.forEach((arrow, i) => {
         clickContador++;
         if(itemNumero - (3+clickContador) > 0) {
             listaFilme[i].style.transform = `translateX(${
-                listaFilme[i].computedStyleMap().get("transform")[0].x.value - 300
+                listaFilme[i].computedStyleMap().get("transform")[0].x.value - 400
             }px)`;
         }
         else {
